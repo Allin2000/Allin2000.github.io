@@ -7,18 +7,26 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
             margin: 0;
+            padding: 0;
             background-color: #f4f4f4;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 20px;
+        }
+        .top-section {
+            display: flex;
+            align-items: flex-start;
         }
         .grid-container {
             display: grid;
-            grid-template-columns: repeat(3, 100px);
-            grid-template-rows: repeat(3, 100px);
-            gap: 10px;
+            grid-template-columns: repeat(3, 50px);
+            grid-template-rows: repeat(3, 50px);
+            gap: 5px;
+            margin-right: 20px;
         }
         .grid-item {
             display: flex;
@@ -37,57 +45,121 @@
             color: inherit;
         }
         .grid-item img {
-            width: 50px;
-            height: 50px;
+            width: 25px;
+            height: 25px;
+        }
+        .intro {
+            width: calc(100% - 185px);
+        }
+        .menu-section {
+            display: flex;
+            align-items: flex-start;
+            margin-top: 20px;
+        }
+        .menu {
+            display: flex;
+            flex-direction: column;
+            width: 185px;
+        }
+        .menu a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            transition: background-color 0.2s;
+        }
+        .menu a:hover {
+            background-color: #e0e0e0;
+        }
+        .content {
+            width: calc(100% - 185px);
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-left: 20px;
+            height: 400px; /* 设置高度与菜单栏总高度一致 */
         }
     </style>
 </head>
 <body>
-    <div class="grid-container">
-        <div class="grid-item">
-            <a href="https://www.github.com" target="_blank">
-                <img src="https://www.github.com/favicon.ico" alt="GitHub">
-            </a>
+    <div class="container">
+        <div class="top-section">
+            <div class="grid-container">
+                <div class="grid-item">
+                    <a href="https://www.github.com" target="_blank">
+                        <img src="https://www.github.com/favicon.ico" alt="GitHub">
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a href="https://chat.openai.com" target="_blank">
+                        <img src="https://chat.openai.com/favicon.ico" alt="ChatGPT">
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a href="https://www.google.com" target="_blank">
+                        <img src="https://www.google.com/favicon.ico" alt="Google">
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a href="https://www.typescriptlang.org" target="_blank">
+                        <img src="https://www.typescriptlang.org/favicon.ico" alt="TypeScript">
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a href="https://www.python.org" target="_blank">
+                        <img src="https://www.python.org/static/favicon.ico" alt="Python">
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a href="https://www.rust-lang.org" target="_blank">
+                        <img src="https://www.rust-lang.org/favicon.ico" alt="Rust">
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a href="https://www.linux.org" target="_blank">
+                        <img src="https://www.linux.org/favicon.ico" alt="Linux">
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a href="https://www.docker.com" target="_blank">
+                        <img src="https://www.docker.com/favicon.ico" alt="Docker">
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a href="https://azure.microsoft.com" target="_blank">
+                        <img src="https://azure.microsoft.com/favicon.ico" alt="Azure">
+                    </a>
+                </div>
+            </div>
+            <div class="intro">
+                <p>这是一些技术相关的链接，点击图标可以跳转到对应的网站。</p>
+            </div>
         </div>
-        <div class="grid-item">
-            <a href="https://chat.openai.com" target="_blank">
-                <img src="https://chat.openai.com/favicon.ico" alt="ChatGPT">
-            </a>
+        <div class="menu-section">
+            <div class="menu">
+                <a href="https://www.github.com" target="_blank">GitHub</a>
+                <a href="https://chat.openai.com" target="_blank">ChatGPT</a>
+                <a href="https://www.google.com" target="_blank">Google</a>
+                <a href="https://www.typescriptlang.org" target="_blank">TypeScript</a>
+                <a href="https://www.python.org" target="_blank">Python</a>
+                <a href="https://www.rust-lang.org" target="_blank">Rust</a>
+                <a href="https://www.linux.org" target="_blank">Linux</a>
+                <a href="https://www.docker.com" target="_blank">Docker</a>
+                <a href="https://azure.microsoft.com" target="_blank">Azure</a>
+            </div>
+            <div class="content">
+                <h2>正文内容</h2>
+                <p>这里是正文内容的区域，你可以在这里添加更多的文字和内容。</p>
+            </div>
         </div>
-        <div class="grid-item">
-            <a href="https://www.google.com" target="_blank">
-                <img src="https://www.google.com/favicon.ico" alt="Google">
-            </a>
-        </div>
-        <div class="grid-item">
-            <a href="https://www.typescriptlang.org" target="_blank">
-                <img src="https://www.typescriptlang.org/favicon.ico" alt="TypeScript">
-            </a>
-        </div>
-        <div class="grid-item">
-            <a href="https://www.python.org" target="_blank">
-                <img src="https://www.python.org/static/favicon.ico" alt="Python">
-            </a>
-        </div>
-        <div class="grid-item">
-            <a href="https://www.rust-lang.org" target="_blank">
-                <img src="https://www.rust-lang.org/favicon.ico" alt="Rust">
-            </a>
-        </div>
-        <div class="grid-item">
-            <a href="https://www.linux.org" target="_blank">
-                <img src="https://www.linux.org/favicon.ico" alt="Linux">
-            </a>
-        </div>
-        <div class="grid-item">
-            <a href="https://www.docker.com" target="_blank">
-                <img src="https://www.docker.com/favicon.ico" alt="Docker">
-            </a>
-        </div>
-        <div class="grid-item">
-            <a href="https://azure.microsoft.com" target="_blank">
-                <img src="https://azure.microsoft.com/favicon.ico" alt="Azure">
-            </a>
+    </div>
+</body>
+</html>
+
+
         </div>
     </div>
 </body>
