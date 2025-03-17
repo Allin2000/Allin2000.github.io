@@ -81,12 +81,23 @@
         .content {
             flex-grow: 1;
             padding: 20px;
-            background-color: #fff;
-            border: 1px solid #ccc;
+            /* background-color: #fff; */
+            /* border: 1px solid #ccc; */
             border-radius: 5px;
             margin-left: 20px;
             height: 400px; /* 设置高度与菜单栏总高度一致 */
         }
+        .content img {
+        max-width: 100%; /* 图片宽度不超过容器宽度 */
+        height: auto;    /* 高度自动调整，保持比例 */
+        display: block;  /* 防止图片下方出现空白间隙 */
+        margin: 10px 0;  /* 添加一些外边距，使图片之间有间隔 */
+        }
+        .content h2 {
+        text-align: center;
+        margin-bottom: 20px; /* 可选：增加底部边距以增加间距 */
+        }
+
     </style>
 </head>
 <body>
@@ -163,23 +174,23 @@
                 <h2>Beautiful Landscape Photos</h2>
                 <ul>
                     <li>
-                        <img src="https://www.pexels.com/zh-cn/photo/417074/" alt="Landscape Photo 1">
+                        <img src="images/pexels-asadphoto-1450360.jpg" alt="Landscape Photo 1">
                         <p>介绍：这是一张美丽的山景照片，展示了壮丽的山脉和清澈的湖泊。</p>
                     </li>
                     <li>
-                        <img src="https://www.pexels.com/zh-cn/photo/709552/" alt="Landscape Photo 2">
+                        <img src="images/pexels-pixabay-33109.jpg" alt="Landscape Photo 2">
                         <p>介绍：这张照片展示了一片金色的麦田，在夕阳的映衬下显得格外宁静。</p>
                     </li>
                     <li>
-                        <img src="https://www.pexels.com/zh-cn/photo/33545/" alt="Landscape Photo 3">
+                        <img src="images/pexels-pixabay-33545.jpg" alt="Landscape Photo 3">
                         <p>介绍：这是一张海滩的照片，蓝色的海水和白色的沙滩形成了鲜明的对比。</p>
                     </li>
                     <li>
-                        <img src="https://www.pexels.com/zh-cn/photo/33109/" alt="Landscape Photo 4">
+                        <img src="images/pexels-samandgos-709552.jpg" alt="Landscape Photo 4">
                         <p>介绍：这张照片展示了一片茂密的森林，绿意盎然，令人心旷神怡。</p>
                     <li>
-                        <img src="https://www.pexels.com/zh-cn/photo/1450360/" alt="Landscape Photo ">
-                        <p>介绍：这张照片展示了一片茂密的森林，绿意盎然，令人心旷神怡。</p>
+                        <img src="images/pexels-souvenirpixels-417074.jpg" alt="Landscape Photo 5">
+                        <p>介绍：这张照片展示了一片茂密的草原，绿意盎然，令人心旷神怡。</p>
                     </li>
                     </li>
                 </ul>
